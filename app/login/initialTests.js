@@ -29,6 +29,9 @@ var request = require('request');
 var assert  = require('assert');
 var should = require('should');
 
+var cbUrl = 'http://127.0.0.1:8080/auth/twitter/callback';
+
+
 describe('user', function() {
   test('this cb should create a new user', function(done) {
     request.post({
@@ -47,7 +50,7 @@ describe('user', function() {
 
   test('this cb should fail creating a new user since the user is not on twitter', function(done) {
     request.post({
-        url: url + '/ew/user',
+        url: url + '/new/user',
         json: {
           name: 'test user',
         }
