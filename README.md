@@ -8,3 +8,5 @@ Using Passport-Twitter node module, we will be working with the following parame
 
   Config/passport.js file: configure passport's twitter strategy
 
+# minitwit [![Build Status](https://travis-ci.org/NSS-Cohort-9/minitwit.svg?branch=master)](https://travis-ci.org/NSS-Cohort-9/minitwit)
+
