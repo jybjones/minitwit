@@ -50,7 +50,7 @@ describe('user', function() {
 
   test('this cb should fail creating a new user since the user is not on twitter', function(done) {
     request.post({
-        url: url + '/new/user',
+        url: cbUrl + '/new/user',
         json: {
           name: 'test user',
         }
